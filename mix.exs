@@ -14,7 +14,7 @@ defmodule Mixpect.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :tentacat]]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +27,7 @@ defmodule Mixpect.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:git_cli, "~> 0.2"}]
+    [{:git_cli, "~> 0.2"},
+     {:tentacat, "~> 0.5"}]
   end
 end
